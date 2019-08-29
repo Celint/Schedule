@@ -1,0 +1,487 @@
+﻿body {
+    margin: 0px;
+    font-family: 微软雅黑;
+}
+
+/*自动排班及排班统计样式*/
+#schedule {
+    text-align: center;
+    display: none;
+}
+
+#title {
+    margin: 36px auto 30px auto;
+    text-align: center;
+}
+
+.title-select {
+    font-family: 新宋体;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 26px;
+    display: inline-block;
+    outline: none;
+    vertical-align: top;
+}
+
+.title-select_year {
+    width: 66px;
+}
+
+.title-select_term {
+    width: 44px;
+    margin-left: 28px;
+}
+
+.title-select_week {
+    width: 48px;
+    margin-left: 0px;
+}
+
+.title-span {
+    font-family: 新宋体;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+    display: inline-block;
+    white-space: pre;
+}
+
+
+#schedule > table {
+    width: 915px;
+    border: double black 3px;
+    margin: auto;
+}
+
+th {
+    background-color: antiquewhite;
+    padding: 0px;
+}
+
+.th_first {
+    height: 66px;
+    width: 120px;
+    background: url(/Images/th_line.png) no-repeat antiquewhite;
+}
+
+    .th_first > :first-child {
+        float: left;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .th_first > :last-child {
+        float: right;
+        margin: 0px 20px 10px 0px;
+    }
+
+#schedule > table td {
+    padding: 0px;
+    width: 112px;
+}
+
+    #schedule > table td > b {
+        color: white;
+        background-color: #88c1ae;
+        font-size: 22px;
+        font-family: 微软雅黑;
+        line-height: 18px;
+        width: 21px;
+        height: 21px;
+        margin: 3px auto;
+        border-radius: 22px;
+        cursor: pointer;
+        display: block;
+    }
+
+.attendant {
+    font-size: 0px;
+}
+
+    .attendant > select {
+        color: #3c6b9c;
+        background-color: #d4ecf1;
+        border: solid 1px #b8dfe4;
+        margin: 3px 3px 0px 4px;
+        font-family: 等线;
+        font-size: 17px;
+        width: 80px;
+        height: 26px;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .attendant > b {
+        font-size: 20px;
+        color: red;
+        font-weight: bold;
+        height: 19px;
+        width: 19px;
+        line-height: 16px;
+        margin: 4px 2px 0px 0px;
+        letter-spacing: -1px;
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+        .attendant > b:hover {
+            color: white;
+            background-color: #f73c3c;
+        }
+
+#schedule > input[type=button] {
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: ghostwhite;
+    border: honeydew 2px outset;
+    border-radius: 6px;
+    width: 110px;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 0px;
+}
+
+
+#audit {
+    text-align: center;
+    display: none;
+}
+
+#displaymode {
+    margin: 0px 0px 20px 0px;
+}
+
+    #displaymode > span {
+        color: #9837d2;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: 等线;
+        letter-spacing: 3px;
+        margin-left: 20px;
+        vertical-align: top;
+    }
+
+    #displaymode > input {
+        width: 15px;
+        height: 15px;
+        margin: 2px 4px;
+        vertical-align: top;
+    }
+
+    #displaymode > label {
+        color: #d26a37;
+        font-family: 等线;
+        font-weight: bold;
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+#audit > input[type=button] {
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: ghostwhite;
+    border: honeydew 2px outset;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 0px;
+}
+
+#audit > table {
+    width: 832px;
+    border: double black 3px;
+    margin: auto;
+}
+
+.th_action {
+    height: 23px;
+    display: none;
+}
+
+    .th_action > div {
+        height: 100%;
+    }
+
+        .th_action > div > span {
+            font-family: 楷体;
+        }
+
+        .th_action > div > i {
+            height: 100%;
+            border-right: solid 1px black;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+#audit > table td {
+    padding: 0px;
+    width: 100px;
+}
+
+.signaudit {
+    background-color: #d7fdfb;
+    border: solid 1px #7fbdc5;
+    border-radius: 4px;
+    margin: 5px;
+    width: 88px;
+}
+
+    .signaudit > p {
+        color: #082f6b;
+        font-family: 楷体;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: default;
+    }
+
+    .signaudit > div {
+        height: 20px;
+        border-top: solid 1px #6899a0;
+    }
+
+        .signaudit > div > i {
+            height: 100%;
+            margin: 0px 11px;
+            border-right: solid 1px #6899a0;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .signaudit > div > span {
+            font-family: 楷体;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 20px;
+            cursor: default;
+        }
+
+.span_signed {
+    color: #0ec10e;
+}
+
+.span_unsigned {
+    color: red;
+}
+
+#audit_list {
+    display: none;
+}
+
+
+#divider {
+    margin: 20px;
+}
+
+    #divider > b {
+        font-size: 20px;
+        font-family: 楷体;
+        line-height: 26px;
+        vertical-align: top;
+    }
+
+    #divider > select {
+        color: #a195ff;
+        height: 26px;
+        font-family: 等线;
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        border: solid 1px #7d7d7d;
+        width: 100px;
+        letter-spacing: 1px;
+        vertical-align: top;
+    }
+
+.tablebox {
+    border: 1px solid;
+    width: 865px;
+    height: 400px;
+    margin: auto;
+    overflow: auto;
+}
+
+    .tablebox > table {
+        border-bottom: solid 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+.groupbox {
+    width: 780px;
+    margin: 36px auto;
+    border: solid 1px;
+    overflow: auto;
+}
+
+    .groupbox > table {
+        width: 100%;
+    }
+
+.tablebox tr {
+    height: 30px;
+    border-color: black;
+    white-space: nowrap;
+}
+
+    .tablebox tr:nth-child(odd) {
+        background-color: #c4e2ea;
+    }
+
+    .tablebox tr.firstrow {
+        height: 40px;
+        background-color: antiquewhite;
+    }
+
+.tablebox th {
+    padding: 0px 5px;
+}
+
+.tablebox .th_operate {
+    padding-left: 15px;
+    width: 70px;
+}
+
+.th_operate > span {
+    font-size: 20px;
+    font-family: 楷体;
+    line-height: 22px;
+    float: right;
+    color: #9ba8d0;
+    cursor: pointer;
+}
+
+    .th_operate > span:hover {
+        color: #14a0cc;
+        background-color: white;
+        border: solid 1px silver;
+        line-height: 20px;
+        margin: 0px -1px;
+    }
+
+.tablebox td {
+    padding: 0px 5px;
+}
+
+.td_ontime {
+    color: #1ae21a;
+}
+
+.td_notontime {
+    color: #ffa026;
+}
+
+.td_absent {
+    color: red;
+}
+
+.td_audit {
+    background-color: #f0f6ff;
+    height: 36px;
+    border-bottom: solid 1px #f0f6ff;
+}
+
+    .td_audit > span {
+        color: red;
+    }
+
+.tablebox u {
+    color: blue;
+    margin: 0px 15px 0px 20px;
+    cursor: pointer;
+}
+
+    .tablebox u:active {
+        color: red;
+    }
+
+
+/*学期信息样式*/
+#addterm {
+    margin-top: 40px;
+    display: none;
+}
+
+    #addterm > h3 {
+        font-family: 宋体;
+        color: #006666;
+        margin: 20px;
+        text-align: center;
+        letter-spacing: 4px;
+        padding-left: 30px;
+    }
+
+    #addterm > .sub {
+        color: #003399;
+        margin: 24px auto;
+        width: 300px;
+        font-size: 0px;
+    }
+
+    #addterm .span_prev {
+        font-family: 楷体;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100px;
+        line-height: 32px;
+        display: inline-block;
+        text-align: right;
+    }
+
+    #addterm .span_next {
+        color: red;
+        font-family: 楷体;
+        font-size: 20px;
+        margin: 5px 0px 0px 6px;
+        vertical-align: top;
+        display: none;
+    }
+
+.addterm-select {
+    width: 170px;
+    height: 30px;
+    font-family: 宋体;
+    font-size: 18px;
+    padding: 2px 0px 0px 4px;
+    letter-spacing: 5px;
+}
+
+.addterm-text {
+    padding-left: 6px;
+    font-family: 宋体;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    width: 160px;
+    display: inline-block;
+}
+
+#addterm > input[type=button] {
+    border-radius: 7px;
+    height: 30px;
+    width: 80px;
+    font-family: 等线;
+    font-size: 18px;
+    background-color: #6d92d2;
+    color: white;
+    margin: 20px auto;
+    outline: none;
+    display: block;
+}
+
+.message {
+    color: red;
+    text-align: center;
+    padding-left: 50px;
+}

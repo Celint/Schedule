@@ -1,0 +1,301 @@
+﻿body {
+    margin: 0px;
+    font-family: 微软雅黑;
+    position: absolute;
+    width: 100%;
+}
+/*清除输入框右端的“×”*/
+input::-ms-clear {
+    display: none;
+}
+
+hr {
+    margin: 0px;
+    border: none;
+}
+
+
+/*顶上一行样式*/
+#head {
+    background-color: lightslategray;
+    height: 36px;
+    line-height: 36px;
+}
+
+.middle {
+    width: 1200px;
+    margin: auto;
+}
+
+#hello {
+    font-family: kaiti;
+    color: azure;
+    font-size: 18px;
+    width: 400px;
+    margin: 0px 0px 0px 50px;
+    display: inline-block;
+}
+
+#admin {
+    text-align: right;
+    width: 700px;
+    display: inline-block;
+    height: 30px;
+}
+
+#adminname {
+    font-weight: bold;
+    color: blanchedalmond;
+    margin: 0px;
+    font-family: heiti;
+    display: inline-block;
+}
+
+#logout {
+    color: lavender;
+    font-size: 12px;
+    font-family: aria;
+}
+
+    #logout > img {
+        height: 20px;
+        width: 16px;
+        margin: 8px 2px 0px 2px;
+        vertical-align: top;
+    }
+
+        #logout > img:hover {
+            height: 22px;
+            width: 18px;
+            margin: 7px 1px 0px 1px;
+        }
+
+#line1 {
+    height: 4px;
+    background-color: royalblue;
+}
+
+
+/*功能选项（第二行）样式*/
+#functions {
+    text-align: center;
+    background-color: #ececec;
+}
+
+.function-a {
+    display: inline-block;
+    line-height: 36px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 4px;
+    font-family: 黑体;
+    text-align: center;
+}
+
+    .function-a:hover {
+        background-color: royalblue;
+        color: white;
+    }
+
+.function-a_hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#line2 {
+    height: 3px;
+    background-color: silver;
+}
+
+/*侧边栏样式*/
+#main {
+    font-size: 0px;
+}
+
+#side {
+    width: 220px;
+    border-left: solid 3px silver;
+    border-right: solid 3px silver;
+    background-color: #418fd0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+dl {
+    margin: 30px 10px;
+    padding-top: 30px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 0px 10px 20px 2px rgba(235,243,255,0.3);
+}
+
+dt {
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: gainsboro;
+    line-height: 36px;
+}
+
+dd {
+    margin: 0px;
+}
+
+
+.side-a {
+    line-height: 30px;
+    display: block;
+    padding-left: 50px;
+}
+
+.side-a_add {
+    font-size: 14px;
+    color: cadetblue;
+    padding-left: 45px;
+    line-height: 30px;
+    display: block;
+}
+
+.side-a:hover {
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+.side-a_hover {
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+/*修改密码样式*/
+#alterpwd-background {
+    background-color: rgba(123, 123, 123, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: none;
+}
+
+#alterpwd {
+    background-color: #ebf9f3;
+    border: 10px solid #bbe8e1;
+    border-radius: 20px;
+    width: 320px;
+    font-size: 18px;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -170px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px #757575;
+    position: absolute;
+}
+
+.p_head {
+    font-family: 黑体;
+    color: #006666;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.div_sup {
+    border: 2px black solid;
+    margin-top: -2px;
+}
+
+.div_sub {
+    color: #003399;
+    text-align: left;
+    font-weight: bold;
+    margin: 14px auto;
+    width: 280px;
+    display: inline-block;
+}
+
+    .div_sub > .span_prev {
+        font-family: 楷体;
+        width: 92px;
+        line-height: 32px;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .div_sub > input {
+        padding-left: 4px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    .div_sub > .span_next {
+        color: red;
+        font-size: 22px;
+        margin-left: 5px;
+        vertical-align: middle;
+        display: none;
+    }
+
+#alterpwd > .message {
+    font-family: 仿宋;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin: 0px 40px 20px 40px;
+    display: none;
+}
+
+#alterpwd > input {
+    border-radius: 7px;
+    height: 32px;
+    width: 90px;
+    font-size: 16px;
+    background-color: #a9d8cf;
+    color: white;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+
+/*主体区域样式*/
+#content {
+    width: 970px;
+    border-right: solid 3px silver;
+    display: inline-block;
+}
+
+#navi {
+    padding-left: 10px;
+    background-color: gainsboro;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 2px darkgray;
+    letter-spacing: 4px;
+    font-size: 16px;
+    margin: 0px;
+    display: block;
+}
+
+iframe {
+    border: none;
+    width: 970px;
+    height: auto;
+}
+
+.background {
+    background-color: rgba(123, 123, 123, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: none;
+}

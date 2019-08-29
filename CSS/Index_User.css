@@ -1,0 +1,389 @@
+﻿body {
+    margin: 0px;
+    font-family: 微软雅黑;
+    position: absolute;
+    width: 100%;
+}
+/*清除输入框右端的“×”*/
+input::-ms-clear {
+    display: none;
+}
+
+/*顶上一行样式*/
+#head {
+    background-color: lightslategray;
+    height: 30px;
+}
+
+.middle {
+    width: 1200px;
+    margin: auto;
+}
+
+#head {
+    height: 30px;
+    line-height: 30px;
+}
+
+#hello {
+    font-family: kaiti;
+    color: azure;
+    font-size: 18px;
+    width: 400px;
+    margin: 0px 0px 0px 50px;
+    display: inline-block;
+}
+
+#user {
+    text-align: right;
+    width: 700px;
+    display: inline-block;
+    height: 30px;
+}
+
+#username {
+    font-weight: bold;
+    color: blanchedalmond;
+    margin: 0px;
+    font-family: heiti;
+    display: inline-block;
+}
+
+#logout {
+    color: lavender;
+    font-size: 12px;
+    font-family: aria;
+}
+
+    #logout > img {
+        height: 20px;
+        width: 16px;
+        margin: 5px 2px 0px 2px;
+        vertical-align: top;
+    }
+
+        #logout > img:hover {
+            height: 22px;
+            width: 18px;
+            margin: 4px 1px 0px 1px;
+        }
+
+#line1 {
+    height: 4px;
+    background-color: royalblue;
+}
+
+
+/*功能选项（第二行）样式*/
+#affair {
+    margin-left: 300px;
+}
+
+.affair-a {
+    display: inline-block;
+    line-height: 36px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: 黑体;
+    text-align: center;
+}
+
+    .affair-a:hover {
+        background-color: royalblue;
+        color: white;
+    }
+
+.affair-a_hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#line2 {
+    height: 3px;
+    background-color: silver;
+}
+
+/*侧边栏样式*/
+#side {
+    width: 220px;
+    border-left: solid 3px silver;
+    border-right: solid 3px silver;
+    background-color: steelblue;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0px 0px 200px 40px rgba(90,160,220,0.2) inset;
+}
+
+dl {
+    margin: 20px 10px;
+    padding-top: 20px;
+    font-family: 微软雅黑;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 20px 5px rgba(235,243,255,0.3);
+}
+
+dt {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gainsboro;
+    line-height: 36px;
+}
+
+dd {
+    margin: 0px;
+}
+
+.side-a {
+    line-height: 30px;
+    display: block;
+    padding-left: 40px;
+}
+
+.side-a_add {
+    font-size: 14px;
+    color: cadetblue;
+    padding-left: 45px;
+    line-height: 30px;
+    display: block;
+}
+
+.side-a:hover {
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+.side-a_hover {
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+
+/*主体区域样式*/
+#content {
+    margin-left: -8px;
+    width: 970px;
+    border-right: solid 3px silver;
+    display: inline-block;
+}
+
+#navi {
+    padding-left: 10px;
+    background-color: gainsboro;
+    margin: 0px 0px 0px 3px;
+    line-height: 40px;
+    border-bottom: solid 2px darkgray;
+    letter-spacing: 4px;
+    display: block;
+}
+
+.prompt {
+    width: 660px;
+    margin: auto;
+    color: red;
+    font-size: 16px;
+    font-family: 楷体;
+    font-weight: bold;
+    text-align: left;
+    line-height: 26px;
+}
+
+    .prompt > li {
+        margin: 8px 0px;
+    }
+
+/*修改课表部分样式*/
+#timetable {
+    text-align: center;
+    display: none;
+}
+
+#timetable-p {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+    #timetable-p + span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: -10px;
+        vertical-align: middle;
+        display: none;
+    }
+
+#timetable-text {
+    color: #7b7b7b;
+    width: 180px;
+    padding: 2px;
+    margin: 16px 0px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    letter-spacing: 4px;
+    font-size: 18px;
+    display: none;
+}
+
+table {
+    width: 800px;
+    height: 300px;
+    border: double black 3px;
+    margin: auto;
+}
+
+th {
+    width: 96px;
+    background-color: antiquewhite;
+}
+
+#th_first {
+    height: 64px;
+    width: 120px;
+    background: url(/Images/th_line.png) no-repeat antiquewhite;
+}
+
+    #th_first > :first-child {
+        float: left;
+        margin: 20px 0px 0px 20px;
+    }
+
+    #th_first > :last-child {
+        float: right;
+        margin: 0px 20px 10px 0px;
+    }
+
+td {
+    padding: 0px;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+#timetable > input[type=button] {
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: ghostwhite;
+    border: honeydew 2px outset;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 0px;
+}
+
+/*修改密码及更新信息部分样式*/
+#alterpwd {
+    border: 10px solid #bbe8e1;
+    border-radius: 20px;
+    width: 320px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #ebf9f3;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px silver;
+    display: none;
+}
+
+#alterinfo {
+    font-size: 18px;
+    width: 870px;
+    margin: auto;
+    display: none;
+}
+
+.p_head {
+    font-family: 黑体;
+    color: #006666;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.div_sup {
+    border: 2px black solid;
+    margin-top: -2px;
+}
+
+.div_sub {
+    color: #003399;
+    text-align: left;
+    font-weight: bold;
+    margin: 14px auto;
+    width: 280px;
+    display: inline-block;
+}
+
+.span_prev {
+    font-family: 楷体;
+    width: 92px;
+    line-height: 32px;
+    display: inline-block;
+    text-align: right;
+}
+
+.text {
+    padding-left: 4px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    width: 160px;
+    display: inline-block;
+}
+
+.radio {
+    margin: 0px 5px;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.span_next {
+    color: red;
+    font-size: 22px;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: none;
+}
+
+.message {
+    font-family: 仿宋;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin: 0px 40px 20px 40px;
+    display: none;
+}
+
+#alterpwd-button, #alterinfo-button {
+    border-radius: 7px;
+    height: 32px;
+    width: 90px;
+    font-size: 16px;
+    background-color: #a9d8cf;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}

@@ -1,0 +1,426 @@
+﻿body {
+    margin: 0px;
+    font-family: 微软雅黑;
+}
+
+#lookup {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
+
+    #lookup > h3 {
+        font-family: 宋体;
+        color: #006666;
+        margin: 20px;
+        letter-spacing: 4px;
+    }
+
+#userinfo {
+    border: solid 1px;
+    width: 915px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+}
+
+#filter {
+    padding: 2px 0px 2px 10px;
+    text-align: left;
+}
+
+    #filter > span {
+        font-family: 微软雅黑;
+        font-weight: bold;
+        color: #18666b;
+        line-height: 38px;
+        vertical-align: top;
+    }
+
+    #filter > b {
+        margin-left: 20px;
+        font-size: 20px;
+        font-family: 楷体;
+        line-height: 38px;
+        vertical-align: top;
+    }
+
+    #filter > select {
+        height: 26px;
+        font-family: 黑体;
+        margin-right: 20px;
+        margin-top: 6px;
+        font-size: 18px;
+        vertical-align: top;
+    }
+
+        #filter > select + b {
+            width: 82px;
+            text-align: right;
+            display: inline-block;
+        }
+
+    #filter > input[type=text] {
+        font-size: 18px;
+        font-family: 黑体;
+        width: 150px;
+        height: 20px;
+        margin-top: 6px;
+        margin-right: 20px;
+        padding-left: 3px;
+        vertical-align: top;
+    }
+
+        #filter > input[type=text] + select {
+            width: 157px;
+            display: none;
+        }
+
+    #filter > input[type=button] {
+        color: #08636d;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 等线;
+        width: 70px;
+        height: 27px;
+        border-width: 2px;
+        border-radius: 4px;
+        background-color: #f3efe7;
+        margin: 5px;
+        vertical-align: top;
+    }
+
+.tablebox {
+    border: 1px solid;
+    margin: 0px 1px;
+    overflow: auto;
+}
+
+    .tablebox table {
+        width: 100%;
+        text-align: center;
+    }
+
+tr {
+    height: 30px;
+    border-color: black;
+    white-space: nowrap;
+}
+
+    tr:nth-child(odd) {
+        background-color: #c4e2ea;
+    }
+
+    tr.firstrow {
+        height: 40px;
+        background-color: antiquewhite;
+    }
+
+        tr.firstrow > :first-child {
+            width: 50px;
+        }
+
+th {
+    padding: 0px 5px;
+}
+
+.th_operate {
+    padding-left: 16px;
+    width: 80px;
+}
+
+    .th_operate > span {
+        font-size: 20px;
+        font-family: 楷体;
+        line-height: 22px;
+        float: right;
+        color: #9ba8d0;
+        cursor: pointer;
+    }
+
+        .th_operate > span:hover {
+            color: #14a0cc;
+            background-color: white;
+            border: solid 1px silver;
+            line-height: 20px;
+            margin: 0px -1px;
+        }
+
+td {
+    padding: 0px 5px;
+}
+
+.td_usable {
+    color: #1ae21a;
+}
+
+.td_unusable {
+    color: #fb1a1a;
+}
+
+td > input {
+    vertical-align: bottom;
+}
+
+td > u {
+    color: blue;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+    td > u:active {
+        color: red;
+    }
+
+
+#pager {
+    right: 10px;
+    bottom: 12px;
+    position: absolute;
+    display: none;
+}
+
+    #pager > a {
+        color: #0101ad;
+        font-size: 15px;
+        margin: 0px 5px;
+        padding: 3px 8px;
+        border: 1px solid #bdbdbd;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        #pager > a#current {
+            color: black;
+            padding: 3px 4px;
+            border: none;
+            text-decoration: none;
+        }
+
+        #pager > a:hover {
+            text-decoration: underline;
+        }
+
+    #pager > span {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+        #pager > span:nth-last-child(2) {
+            margin-left: 8px;
+        }
+
+    #pager input[type=number] {
+        font-size: 16px;
+        width: 42px;
+        line-height: 22px;
+        padding-left: 3px;
+        margin: -2px 5px;
+        border: 1px solid #bdbdbd;
+        vertical-align: top;
+    }
+
+    #pager > input[type=button] {
+        font-size: 15px;
+        background-color: #fff7e9;
+        height: 24px;
+        width: 40px;
+        margin: -1px 5px;
+        border: 1px solid #bdbdbd;
+        border-radius: 5px;
+        vertical-align: top;
+    }
+
+#lookup > input {
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: ghostwhite;
+    border: honeydew 2px outset;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 0px;
+}
+
+
+#add {
+    display: none;
+}
+
+#addmethod {
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+
+    #addmethod > span {
+        color: #9837d2;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: 等线;
+        letter-spacing: 3px;
+    }
+
+    #addmethod > select {
+        color: #d26a37;
+        font-family: 等线;
+        font-weight: bold;
+        font-size: 19px;
+        letter-spacing: 2px;
+        height: 28px;
+        width: 110px;
+        border-radius: 4px;
+    }
+
+#add_batch {
+    margin-top: 26px;
+    display: none;
+}
+
+.sub {
+    width: 350px;
+    margin: 20px auto;
+}
+
+    .sub > span {
+        line-height: 26px;
+        width: 100px;
+        text-align: right;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .sub > a {
+        font-family: 等线;
+        font-size: 18px;
+    }
+
+    .sub > p {
+        width: 110px;
+        height: 28px;
+        line-height: 26px;
+        color: white;
+        background-color: #0eb2ca;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: top;
+        margin: 0px;
+        display: inline-block;
+    }
+
+    .sub > .filebox {
+        width: 0px;
+        left: -110px;
+        position: relative;
+        display: inline-block;
+    }
+
+        .sub > .filebox > input[type=file] {
+            width: 110px;
+            height: 28px;
+            vertical-align: top;
+            opacity: 0;
+        }
+
+ol {
+    width: 420px;
+    margin: auto;
+    color: red;
+    font-size: 14px;
+    font-family: 宋体;
+    font-weight: bold;
+    text-align: left;
+    line-height: 26px;
+}
+
+    ol > li {
+        margin: 8px 0px;
+    }
+
+#add_single {
+    margin-top: 26px;
+    display: none;
+}
+
+    #add_single > h3 {
+        font-family: 黑体;
+        color: #006666;
+        margin: 20px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+
+.div_sup {
+    width: 580px;
+    margin: auto;
+    border: 1px black solid;
+    margin-top: -1px;
+}
+
+.div_sub {
+    color: #003399;
+    text-align: left;
+    font-weight: bold;
+    margin: 8px auto;
+    width: 280px;
+    display: inline-block;
+}
+
+.span_prev {
+    font-family: 楷体;
+    width: 92px;
+    display: inline-block;
+    text-align: right;
+}
+
+.text {
+    padding-left: 4px;
+    font-family: 等线;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    width: 160px;
+    display: inline-block;
+}
+
+.radio {
+    margin: 0px 5px;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1px;
+    vertical-align: middle;
+}
+
+.div_sub > select {
+    font-size: 16px;
+    font-family: 等线;
+    letter-spacing: 1px;
+    height: 28px;
+    width: 168px;
+}
+
+.span_next {
+    color: red;
+    font-size: 22px;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: none;
+}
+
+#add_single > input {
+    border-radius: 7px;
+    height: 32px;
+    width: 100px;
+    font-size: 16px;
+    background-color: #59b9dc;
+    color: white;
+    margin: 24px auto;
+    display: block;
+}
